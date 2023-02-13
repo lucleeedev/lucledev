@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- link -->
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./stream.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./grid.css">
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div id="app" class="grid wide">
+
+        <header class="header col-12">
+
+            <div class="header__search-mobile-icon-div">
+                <i class="fa-solid fa-magnifying-glass header__search-mobile-icon"></i>
+            </div>
+
+            <div class="header__logo">
+                <img src="./img/logo.png" alt="" class="header__logo-img">
+            </div>
+
+            
+            <div class="header__search">
+                <form action="#" class="header__search-search">
+                    <i class="fa-solid fa-magnifying-glass header__search-icon"></i>
+                    <input type="text" placeholder="Gõ một cái gì đó..." class="header__search-input">
+                </form>
+            </div>
+            
+            <ul class="header__nav-list hide-on-mobile-tablet">
+                <li class="header__nav-item">
+                    <a href="./index.html" class="header__nav-link nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="./browse.html" class="header__nav-link nav-link">
+                        Khám phá
+                    </a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="./details.html" class="header__nav-link nav-link">
+                        Theo dõi
+                    </a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="./liveStream.html" class="header__nav-link nav-link">
+                        Stream
+                    </a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="./profile.html" class="header__nav-link nav-link header__nav-profile active-bg">
+                        Hồ sơ
+                        <img src="./img/profile-header.jpg" alt="" class="header__nav-link-img">
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- thanh bars trên tablet mà mobile -->
+            <div class="header__search-mobile-tablet">
+                <div class="header-mobile-tablet">
+                    <div class="header-crossBar-1"></div>
+                    <div class="header-crossBar-2"></div>
+                </div>
+                <div class="header-crossBar-3"></div>
+            </div>
+
+        </header>
+        <!-- danh sách khi click vào thanh bars -->
+        <ul class="header__bars-list">
+            <li class="header__bars-item">
+                <a href="./index.html" class="header__bar-link nav-link">
+                    Trang chủ
+                </a>
+            </li>
+            <li class="header__bars-item">
+                <a href="./browse.html" class="header__bar-link nav-link">
+                    Khám phá
+                </a>
+            </li>
+            <li class="header__bars-item">
+                <a href="./details.html" class="header__bar-link nav-link">
+                    Theo dõi
+                </a>
+            </li>
+            <li class="header__bars-item">
+                <a href="./liveStream.html" class="header__bar-link nav-link">
+                    Stream
+                </a>
+            </li>
+            <li class="header__bars-item">
+                <a href="./profile.html" class="header__bar-link nav-link active-bg">
+                    Hồ sơ
+                </a>
+            </li>
+        </ul>
+
+        <div class="col-12">
+            <div class="container">
+
+                <!-- start profile -->
+                    <div class="row-web">
+                        <div class="profile--container__profile">
+                            <div class="row-web">
+                                <div class="col-12 p-4 t-12 m-12 not-col-12-mobile">
+                                    <img src="img/profile.jpg" alt="" class="profile--container__profile-img">
+                                </div>
+                                <div class="col-12 p-4 t-12 m-12 not-col-12-mobile align-self-center">
+                                    <div class="profile--container__profile-text">
+                                        <span class="profile--container__profile-span">
+                                            Offline
+                                        </span>
+                                        <h4 class="profile--container__profile-h4">
+                                            Luc Lee
+                                        </h4>
+                                        <p class="profile--container__profile-p">
+                                            Bạn chưa phát trực tiếp. Phát trực tiếp bằng cách chạm vào nút bên dưới.
+                                        </p>
+                                        <div class="profile--container__profile-mainBtn">
+                                            <a href="#" class="profile--container__profile-btnLink">Phát trực tiếp</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 p-4 t-12 m-12 not-col-12-mobile align-self-center">
+                                    <ul class="profile--container__profile-list">
+                                        <li class="profile--container__profile-item">
+                                            <p class="profile--container__profile-item-p">
+                                                Game đã tải
+                                            </p>
+                                            <span class="profile--container__profile-item-span">
+                                                3
+                                            </span>
+                                        </li>
+                                        <li class="profile--container__profile-item">
+                                            <p class="profile--container__profile-item-p">
+                                                Bạn bè Online
+                                            </p>
+                                            <span class="profile--container__profile-item-span">
+                                                16
+                                            </span>
+                                        </li>
+                                        <li class="profile--container__profile-item">
+                                            <p class="profile--container__profile-item-p">
+                                                Live Stream
+                                            </p>
+                                            <span class="profile--container__profile-item-span">
+                                                Không
+                                            </span>
+                                        </li>
+                                        <li class="profile--container__profile-item">
+                                            <p class="profile--container__profile-item-p">
+                                                Clips
+                                            </p>
+                                            <span class="profile--container__profile-item-span">
+                                                29
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row-web">
+                                <div class="p-12 col-12">
+                                    <div class="profile--container__mostClips">
+                                        <div class="row-web">
+                                            <div class="p-12 t-12 m-12 col-12 not-col-12-mobile">
+                                                <div class="profile--container__mostClips-section">
+                                                    <h4 class="profile--container__mostClips-h4">
+                                                        Clips
+                                                        <em class="profile--container__mostClips-em">
+                                                            Nhiều View nhất
+                                                        </em>
+                                                    </h4>
+                                                </div>                       
+                                            </div>
+                                            <div class="p-3 t-6 m-12 col-12 not-col-12-mobile">
+                                                <div class="profile--container__mostClips-item">
+                                                    <div class="profile--container__mostClips-item-thumb">
+                                                        <img src="img/clip-01.jpg" alt="" class="profile--container__mostClips-item-img">
+                                                        <a href="https://www.youtube.com/watch?v=r1b03uKWk_M&ab_channel=GaFN" class="profile--container__mostClips-item-link">
+                                                            <i class="fa-solid fa-play profile--container__mostClips-item-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="profile--container__mostClips-item-content">
+                                                        <h4 class="profile--container__mostClips-item-h4">
+                                                            First Clip
+                                                        </h4>
+                                                        <span class="profile--container__mostClips-item-span">
+                                                            <i class="fa-solid fa-eye profile--container__mostClips-item-span-i"></i>
+                                                            2.4K
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3 t-6 m-12 col-12 not-col-12-mobile">
+                                                <div class="profile--container__mostClips-item">
+                                                    <div class="profile--container__mostClips-item-thumb">
+                                                        <img src="img/clip-02.jpg" alt="" class="profile--container__mostClips-item-img">
+                                                        <a href="https://www.youtube.com/watch?v=r1b03uKWk_M&ab_channel=GaFN" class="profile--container__mostClips-item-link">
+                                                            <i class="fa-solid fa-play profile--container__mostClips-item-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="profile--container__mostClips-item-content">
+                                                        <h4 class="profile--container__mostClips-item-h4">
+                                                            Second Clip
+                                                        </h4>
+                                                        <span class="profile--container__mostClips-item-span">
+                                                            <i class="fa-solid fa-eye profile--container__mostClips-item-span-i"></i>
+                                                            2.8K
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3 t-6 m-12 col-12 not-col-12-mobile">
+                                                <div class="profile--container__mostClips-item">
+                                                    <div class="profile--container__mostClips-item-thumb">
+                                                        <img src="img/clip-03.jpg" alt="" class="profile--container__mostClips-item-img">
+                                                        <a href="https://www.youtube.com/watch?v=r1b03uKWk_M&ab_channel=GaFN" class="profile--container__mostClips-item-link">
+                                                            <i class="fa-solid fa-play profile--container__mostClips-item-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="profile--container__mostClips-item-content">
+                                                        <h4 class="profile--container__mostClips-item-h4">
+                                                            Third Clip
+                                                        </h4>
+                                                        <span class="profile--container__mostClips-item-span">
+                                                            <i class="fa-solid fa-eye profile--container__mostClips-item-span-i"></i>
+                                                            3K
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3 t-6 m-12 col-12 not-col-12-mobile">
+                                                <div class="profile--container__mostClips-item">
+                                                    <div class="profile--container__mostClips-item-thumb">
+                                                        <img src="img/clip-04.jpg" alt="" class="profile--container__mostClips-item-img">
+                                                        <a href="https://www.youtube.com/watch?v=r1b03uKWk_M&ab_channel=GaFN" class="profile--container__mostClips-item-link">
+                                                            <i class="fa-solid fa-play profile--container__mostClips-item-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="profile--container__mostClips-item-content">
+                                                        <h4 class="profile--container__mostClips-item-h4">
+                                                            Fourth Clip
+                                                        </h4>
+                                                        <span class="profile--container__mostClips-item-span">
+                                                            <i class="fa-solid fa-eye profile--container__mostClips-item-span-i"></i>
+                                                            1.8K
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-12 t-12 m-12 col-12 not-col-12-mobile">
+                                                <div class="profile--container__mostClips-btn">
+                                                    <a href="#" class="profile--container__mostClips-btn-link">
+                                                        Xem thêm clips
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- end profile -->
+
+                <!-- start most popular clip -->
+                
+                <!-- end most popular clip -->
+
+                <!-- start library -->
+                <div class="container__library">
+                    <div class="col-12">
+                        <div class="container__library-section">
+                           <div class="col-12">
+                            <h4 class="container__library-text">
+                                <span class="container__library-library">
+                                    Thư viện
+                                </span>
+                                <em class="container__library-your">
+                                    Của bạn
+                                </em>
+                            </h4>
+                           </div>
+                        </div>
+                        <div class="container__library-ds col-12">
+                            <ul class="container__library-list">
+                                <li class="container__library-item p-2 t-6 m-12">
+                                    <img src="./img/game-01.jpg" alt="" class="container__library-img">
+                                </li>
+                                <li class="container__library-item p-2 t-6 m-6">
+                                    <h4 class="container__library-name">
+                                        Dota 2
+                                    </h4>
+                                    <span class="container__library-span">
+                                        Sandbox
+                                    </span>
+                                </li>
+                                <li class="container__library-item p-2 t-6 m-6">
+                                    <h4 class="container__library-name">
+                                        Ngày thêm
+                                    </h4>
+                                    <span class="container__library-span">
+                                        24/08/2036
+                                    </span>
+                                </li>
+                                <li class="container__library-item p-2 t-6 m-6">
+                                    <h4 class="container__library-name">
+                                        Số giờ chơi
+                                    </h4>
+                                    <span class="container__library-span">
+                                        634 H 22 Mins
+                                    </span>
+                                </li>
+                                <li class="container__library-item p-2 t-6 m-6">
+                                    <h4 class="container__library-name">
+                                        Tình trạng
+                                    </h4>
+                                    <span class="container__library-span">
+                                        Đã tải
+                                    </span>
+                                </li>
+                                <li class="container__library-item p-2 t-6 m-12">
+                                    <div class="container__library-btn">
+                                        <a href="" class="container__library-link">
+                                            Đã tải
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="container__library-list">
+                                <li class="container__library-item p-2 t-6 m-12">
+                                    <img src="./img/game-02.jpg" alt="" class="container__library-img">
+                                </li>
+                                <li class="container__library-item p-2 t-6 m-6">
+                                    <h4 class="container__library-name">
+                                        Fortnite
+                                    </h4>
+                                    <span class="container__library-span">
+                                        Sandbox
+                                    </span>
+                                </li>
+                                <li class="container__library-item p-2 t-6 m-6">
+                                    <h4 class="container__library-name">
+                                        Ngày thêm
+                                    </h4>
+                                    <span class="container__library-span">
+                                        22/06/2036
+                                    </span>
+                                </li>
+                                <li class="container__library-item p-2 t-6 m-6">
+                                    <h4 class="container__library-name">
+                                        Số giờ chơi
+                                    </h4>
+                                    <span class="container__library-span">
+                                        740 H 52 Mins
+                                    </span>
+                                </li>
+                                <li class="container__library-item p-2 t-6 m-6">
+                                    <h4 class="container__library-name">
+                                        Tình trạng
+                                    </h4>
+                                    <span class="container__library-span">
+                                        Chưa tải
+                                    </span>
+                                </li>
+                                <li class="container__library-item p-2 t-6 m-12">
+                                    <div class="container__library-btn container__library-btn-active">
+                                        <a href="" class="container__library-link container__library-active">
+                                            Tải xuống
+                                        </a>
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="container__library-list">
+                                <li class="container__library-item p-2 t-6 m-12">
+                                    <img src="./img/game-03.jpg" alt="" class="container__library-img">
+                                </li>
+                                <li class="container__library-item p-2 t-6 m-6">
+                                    <h4 class="container__library-name">
+                                        CS-GO
+                                    </h4>
+                                    <span class="container__library-span">
+                                        Sandbox
+                                    </span>
+                                </li>
+                                <li class="container__library-item p-2 t-6 m-6">
+                                    <h4 class="container__library-name">
+                                        Ngày thêm
+                                    </h4>
+                                    <span class="container__library-span">
+                                        21/04/2036
+                                    </span>
+                                </li>
+                                <li class="container__library-item p-2 t-6 m-6">
+                                    <h4 class="container__library-name">
+                                        Số giờ chơi
+                                    </h4>
+                                    <span class="container__library-span">
+                                        892 H 14 Mins
+                                    </span>
+                                </li>
+                                <li class="container__library-item p-2 t-6 m-6">
+                                    <h4 class="container__library-name">
+                                        Tình trạng
+                                    </h4>
+                                    <span class="container__library-span">
+                                        Đã tải
+                                    </span>
+                                </li>
+                                <li class="container__library-item p-2 t-6 m-12">
+                                    <div class="container__library-btn">
+                                        <a href="" class="container__library-link">
+                                            Đã tải
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- end library -->
+                <div class="p-12 t-12">
+                    <div class="container__library-button">
+                        <a href="" class="container__btn-link">
+                            Xem thư viện
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="col-12">
+                <p class="footer__container">
+                    Copyright © 2036
+                    <a href="" class="footer__container-link">
+                        Cyborg Gaming
+                    </a>
+                    Company. All rights reserved.
+                    <br>
+                    Design: 
+                    <a href="" class="footer__container-link">
+                        Luc Lee
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- loader -->
+
+    <div class="overlay"></div>
+    <div class="loader-web">
+        <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
+        </div>
+    </div>
+
+    <!-- end load -->
+    <!-- link javascript -->
+    <script src="js/browse.js"></script>
+    <script src="js/stream.js"></script> 
+</body>
+</html>

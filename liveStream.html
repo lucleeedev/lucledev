@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stream</title>
+
+    <!-- link -->
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./stream.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./grid.css">
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div id="app" class="grid wide">
+
+        <header class="header col-12">
+
+            <div class="header__search-mobile-icon-div">
+                <i class="fa-solid fa-magnifying-glass header__search-mobile-icon"></i>
+            </div>
+
+            <div class="header__logo">
+                <img src="./img/logo.png" alt="" class="header__logo-img">
+            </div>
+
+            
+            <div class="header__search">
+                <form action="#" class="header__search-search">
+                    <i class="fa-solid fa-magnifying-glass header__search-icon"></i>
+                    <input type="text" placeholder="Gõ một cái gì đó..." class="header__search-input">
+                </form>
+            </div>
+            
+            <ul class="header__nav-list hide-on-mobile-tablet">
+                <li class="header__nav-item">
+                    <a href="./index.html" class="header__nav-link nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="./browse.html" class="header__nav-link nav-link">
+                        Khám phá
+                    </a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="./details.html" class="header__nav-link nav-link">
+                        Theo dõi
+                    </a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="./liveStream.html" class="header__nav-link nav-link active">
+                        Stream
+                    </a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="./profile.html" class="header__nav-link nav-link header__nav-profile">
+                        Hồ sơ
+                        <img src="./img/profile-header.jpg" alt="" class="header__nav-link-img">
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- thanh bars trên tablet mà mobile -->
+            <div class="header__search-mobile-tablet">
+                <div class="header-mobile-tablet">
+                    <div class="header-crossBar-1"></div>
+                    <div class="header-crossBar-2"></div>
+                </div>
+                <div class="header-crossBar-3"></div>
+            </div>
+
+        </header>
+        <!-- danh sách khi click vào thanh bars -->
+        <ul class="header__bars-list">
+            <li class="header__bars-item">
+                <a href="./index.html" class="header__bar-link nav-link">
+                    Trang chủ
+                </a>
+            </li>
+            <li class="header__bars-item">
+                <a href="./browse.html" class="header__bar-link nav-link">
+                    Khám phá
+                </a>
+            </li>
+            <li class="header__bars-item">
+                <a href="./details.html" class="header__bar-link nav-link">
+                    Theo dõi
+                </a>
+            </li>
+            <li class="header__bars-item">
+                <a href="./liveStream.html" class="header__bar-link nav-link active">
+                    Stream
+                </a>
+            </li>
+            <li class="header__bars-item">
+                <a href="./profile.html" class="header__bar-link nav-link">
+                    Hồ sơ
+                </a>
+            </li>
+        </ul>
+
+        <div class="col-12">
+            <div class="container">
+                <div class="container__browse-topGame">
+                    <div class="col-12 p-8 t-12 m-12">
+                        <div class="browse--featured-games">
+                            <div class="featured__section">
+                                <h4 class="featured__section-name">
+                                    <em class="featured__section-game">
+                                        Phát
+                                    </em>
+                                    Trực tiếp
+                                </h4>
+                            </div>   
+                            <div class="featured__section-wrapper">
+                                <i id="right" class="fa-solid fa-angle-right featured__section-icon"></i>
+                                <i id="left" class="fa-solid fa-angle-left featured__section-icon"></i>
+                                <div class="featured__section-carousel">
+                                    <div class="featured__section-carousel-item">
+                                        <img src="img/featured-01.jpg" alt="" draggable="false" class="featured__section-img">
+                                        <h4 class="featured__section-h4">CS-GO</h4>
+                                        <span class="featured__section-span">249K Tải về</span>
+                                        <ul class="container__popular-sdl container__popular-sdl-browse">
+                                            <li class="container__popular-star">
+                                                <i class="fa-solid fa-star container__popular-icon-star"></i>
+                                                4.8
+                                            </li>
+                                            <li class="container__popular-download">
+                                                <i class="fa-solid fa-download container__popular-icon-download"></i>
+                                                2.3M
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="featured__section-carousel-item">
+                                        <img src="img/featured-02.jpg" alt="" draggable="false" class="featured__section-img">
+                                        <h4 class="featured__section-h4">Gamezer</h4>
+                                        <span class="featured__section-span">249K Tải về</span>
+                                        <ul class="container__popular-sdl container__popular-sdl-browse">
+                                            <li class="container__popular-star">
+                                                <i class="fa-solid fa-star container__popular-icon-star"></i>
+                                                4.8
+                                            </li>
+                                            <li class="container__popular-download">
+                                                <i class="fa-solid fa-download container__popular-icon-download"></i>
+                                                2.3M
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="featured__section-carousel-item">
+                                        <img src="img/featured-03.jpg" alt="" draggable="false" class="featured__section-img">
+                                        <h4 class="featured__section-h4">Island Rusty</h4>
+                                        <span class="featured__section-span">249K Tải về</span>
+                                        <ul class="container__popular-sdl container__popular-sdl-browse">
+                                            <li class="container__popular-star">
+                                                <i class="fa-solid fa-star container__popular-icon-star"></i>
+                                                4.8
+                                            </li>
+                                            <li class="container__popular-download">
+                                                <i class="fa-solid fa-download container__popular-icon-download"></i>
+                                                2.3M
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="featured__section-carousel-item">
+                                        <img src="img/featured-01.jpg" alt="" draggable="false" class="featured__section-img">
+                                        <h4 class="featured__section-h4">CS-GO</h4>
+                                        <span class="featured__section-span">249K Tải về</span>
+                                        <ul class="container__popular-sdl container__popular-sdl-browse">
+                                            <li class="container__popular-star">
+                                                <i class="fa-solid fa-star container__popular-icon-star"></i>
+                                                4.8
+                                            </li>
+                                            <li class="container__popular-download">
+                                                <i class="fa-solid fa-download container__popular-icon-download"></i>
+                                                2.3M
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="featured__section-carousel-item">
+                                        <img src="img/featured-02.jpg" alt="" draggable="false" class="featured__section-img">
+                                        <h4 class="featured__section-h4">Gamezer</h4>
+                                        <span class="featured__section-span">249K Tải về</span>
+                                        <ul class="container__popular-sdl container__popular-sdl-browse">
+                                            <li class="container__popular-star">
+                                                <i class="fa-solid fa-star container__popular-icon-star"></i>
+                                                4.8
+                                            </li>
+                                            <li class="container__popular-download">
+                                                <i class="fa-solid fa-download container__popular-icon-download"></i>
+                                                2.3M
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="featured__section-carousel-item">
+                                        <img src="img/featured-03.jpg" alt="" draggable="false" class="featured__section-img">
+                                        <h4 class="featured__section-h4">Island Rusty</h4>
+                                        <span class="featured__section-span">249K Tải về</span>
+                                        <ul class="container__popular-sdl container__popular-sdl-browse">
+                                            <li class="container__popular-star">
+                                                <i class="fa-solid fa-star container__popular-icon-star"></i>
+                                                4.8
+                                            </li>
+                                            <li class="container__popular-download">
+                                                <i class="fa-solid fa-download container__popular-icon-download"></i>
+                                                2.3M
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-4 t-12 m-12">
+                        <div class="stream--container__top-streams">
+                            <div class="featured__section">
+                                <h4 class="featured__section-name">
+                                    <em class="featured__section-game">
+                                        Top
+                                    </em>
+                                    Streamers
+                                </h4>
+                            </div> 
+                            <ul class="stream--container__top-streams-list">
+                                <li class="stream--container__top-streams-item">
+                                    <span class="stream--container__top-streams-span">
+                                        01
+                                    </span>
+                                    <img src="img/avatar-01.jpg" alt="" class="stream--container__top-streams-img">
+                                    <h6 class="stream--container__top-streams-h6">
+                                        <i class="ti-check stream--container__top-streams-icon"></i>
+                                        Luc Lee
+                                    </h6>
+                                    <div class="stream--container__top-streams-btn">
+                                        <a href="" class="stream--container__top-streams-link">
+                                            Theo dõi
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="stream--container__top-streams-item">
+                                    <span class="stream--container__top-streams-span">
+                                        02
+                                    </span>
+                                    <img src="img/avatar-02.jpg" alt="" class="stream--container__top-streams-img">
+                                    <h6 class="stream--container__top-streams-h6">
+                                        <i class="ti-check stream--container__top-streams-icon"></i>
+                                        Kengan
+                                    </h6>
+                                    <div class="stream--container__top-streams-btn">
+                                        <a href="" class="stream--container__top-streams-link">
+                                            Theo dõi
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="stream--container__top-streams-item">
+                                    <span class="stream--container__top-streams-span">
+                                        03
+                                    </span>
+                                    <img src="img/avatar-03.jpg" alt="" class="stream--container__top-streams-img">
+                                    <h6 class="stream--container__top-streams-h6">
+                                        <i class="ti-check stream--container__top-streams-icon"></i>
+                                        Areluwa
+                                    </h6>
+                                    <div class="stream--container__top-streams-btn">
+                                        <a href="" class="stream--container__top-streams-link">
+                                            Theo dõi
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="stream--container__top-streams-item">
+                                    <span class="stream--container__top-streams-span">
+                                        04
+                                    </span>
+                                    <img src="img/avatar-04.jpg" alt="" class="stream--container__top-streams-img">
+                                    <h6 class="stream--container__top-streams-h6">
+                                        <i class="ti-check stream--container__top-streams-icon"></i>
+                                        Omeg
+                                    </h6>
+                                    <div class="stream--container__top-streams-btn">
+                                        <a href="" class="stream--container__top-streams-link">
+                                            Theo dõi
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="stream--container__top-streams-item">
+                                    <span class="stream--container__top-streams-span">
+                                        05
+                                    </span>
+                                    <img src="img/avatar-01.jpg" alt="" class="stream--container__top-streams-img">
+                                    <h6 class="stream--container__top-streams-h6">
+                                        <i class="ti-check stream--container__top-streams-icon"></i>
+                                        Luc Lee
+                                    </h6>
+                                    <div class="stream--container__top-streams-btn">
+                                        <a href="" class="stream--container__top-streams-link">
+                                            Theo dõi
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="stream--container__most-popular">
+                        <div class="featured__section col-12">
+                            <h4 class="featured__section-name">
+                                <em class="featured__section-game">
+                                    Live Stream
+                                </em>
+                                phổ biến
+                            </h4>
+                        </div>  
+                        <div class="row-web">
+                            <div class="p-3 t-6 col-12">
+                                <div class="browse--mostLive-stream-item">
+                                    <div class="browse--mostLive-stream-thumb">
+                                        <img src="img/stream-05.jpg" alt="" class="browse--mostLive-stream-img">
+                                        <div class="browse--mostLive-stream-thumb-hover">
+                                            <div class="browse--mostLive-stream-thumb-live">
+                                                <a href="" class="browse--mostLive-stream-thumb-link">Live</a>
+                                            </div>
+                                            <ul class="browse--mostLive-stream-thumb-list">
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-eye browse--mostLive-stream-thumb-icon"></i>
+                                                        1.2K
+                                                    </a>
+                                                </li>
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-gamepad browse--mostLive-stream-thumb-icon"></i>
+                                                        Phi Phai
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="browse--mostLive-stream-content">
+                                        <div class="browse--mostLive-stream-avatar">
+                                            <img src="img/avatar-01.jpg" alt="" class="browse--mostLive-stream-avatar-img">
+                                        </div>
+                                        <div class="browse--mostLive-stream-name">
+                                            <div class="browse--mostLive-stream-icon">
+                                                <i class="fa-solid fa-check browse--mostLive-stream-icon-check"></i>
+                                                KenganC
+                                            </div>
+                                            <h4 class="browse--mostLive-stream-h4">
+                                                Trò chuyện với my Fans. Follow me!
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3 t-6 col-12">
+                                <div class="browse--mostLive-stream-item">
+                                    <div class="browse--mostLive-stream-thumb">
+                                        <img src="img/stream-06.jpg" alt="" class="browse--mostLive-stream-img">
+                                        <div class="browse--mostLive-stream-thumb-hover">
+                                            <div class="browse--mostLive-stream-thumb-live">
+                                                <a href="" class="browse--mostLive-stream-thumb-link">Live</a>
+                                            </div>
+                                            <ul class="browse--mostLive-stream-thumb-list">
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-eye browse--mostLive-stream-thumb-icon"></i>
+                                                        1K
+                                                    </a>
+                                                </li>
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-gamepad browse--mostLive-stream-thumb-icon"></i>
+                                                        Pắp ri
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="browse--mostLive-stream-content">
+                                        <div class="browse--mostLive-stream-avatar">
+                                            <img src="img/avatar-02.jpg" alt="" class="browse--mostLive-stream-avatar-img">
+                                        </div>
+                                        <div class="browse--mostLive-stream-name">
+                                            <div class="browse--mostLive-stream-icon">
+                                                <i class="fa-solid fa-check browse--mostLive-stream-icon-check"></i>
+                                                LunaMa
+                                            </div>
+                                            <h4 class="browse--mostLive-stream-h4">
+                                                LiveStream PugG 36 tiếng liên tục? 
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3 t-6 col-12">
+                                <div class="browse--mostLive-stream-item">
+                                    <div class="browse--mostLive-stream-thumb">
+                                        <img src="img/stream-07.jpg" alt="" class="browse--mostLive-stream-img">
+                                        <div class="browse--mostLive-stream-thumb-hover">
+                                            <div class="browse--mostLive-stream-thumb-live">
+                                                <a href="" class="browse--mostLive-stream-thumb-link">Live</a>
+                                            </div>
+                                            <ul class="browse--mostLive-stream-thumb-list">
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-eye browse--mostLive-stream-thumb-icon"></i>
+                                                        2.2K
+                                                    </a>
+                                                </li>
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-gamepad browse--mostLive-stream-thumb-icon"></i>
+                                                        Lờ o Lờ
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="browse--mostLive-stream-content">
+                                        <div class="browse--mostLive-stream-avatar">
+                                            <img src="img/avatar-03.jpg" alt="" class="browse--mostLive-stream-avatar-img">
+                                        </div>
+                                        <div class="browse--mostLive-stream-name">
+                                            <div class="browse--mostLive-stream-icon">
+                                                <i class="fa-solid fa-check browse--mostLive-stream-icon-check"></i>
+                                                Areluwa
+                                            </div>
+                                            <h4 class="browse--mostLive-stream-h4">
+                                                LiveStream LOL 36 tiếng liên tục? 
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3 t-6 col-12">
+                                <div class="browse--mostLive-stream-item">
+                                    <div class="browse--mostLive-stream-thumb">
+                                        <img src="img/stream-08.jpg" alt="" class="browse--mostLive-stream-img">
+                                        <div class="browse--mostLive-stream-thumb-hover">
+                                            <div class="browse--mostLive-stream-thumb-live">
+                                                <a href="" class="browse--mostLive-stream-thumb-link">Live</a>
+                                            </div>
+                                            <ul class="browse--mostLive-stream-thumb-list">
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-eye browse--mostLive-stream-thumb-icon"></i>
+                                                        2K
+                                                    </a>
+                                                </li>
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-gamepad browse--mostLive-stream-thumb-icon"></i>
+                                                        Phi Phai
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="browse--mostLive-stream-content">
+                                        <div class="browse--mostLive-stream-avatar">
+                                            <img src="img/avatar-04.jpg" alt="" class="browse--mostLive-stream-avatar-img">
+                                        </div>
+                                        <div class="browse--mostLive-stream-name">
+                                            <div class="browse--mostLive-stream-icon">
+                                                <i class="fa-solid fa-check browse--mostLive-stream-icon-check"></i>
+                                                GangTm
+                                            </div>
+                                            <h4 class="browse--mostLive-stream-h4">
+                                                Cùng xem GangTm chơi. Good morning
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3 t-6 col-12">
+                                <div class="browse--mostLive-stream-item">
+                                    <div class="browse--mostLive-stream-thumb">
+                                        <img src="img/stream-01.jpg" alt="" class="browse--mostLive-stream-img">
+                                        <div class="browse--mostLive-stream-thumb-hover">
+                                            <div class="browse--mostLive-stream-thumb-live">
+                                                <a href="" class="browse--mostLive-stream-thumb-link">Live</a>
+                                            </div>
+                                            <ul class="browse--mostLive-stream-thumb-list">
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-eye browse--mostLive-stream-thumb-icon"></i>
+                                                        1.2K
+                                                    </a>
+                                                </li>
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-gamepad browse--mostLive-stream-thumb-icon"></i>
+                                                        Phi Phai
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="browse--mostLive-stream-content">
+                                        <div class="browse--mostLive-stream-avatar">
+                                            <img src="img/avatar-01.jpg" alt="" class="browse--mostLive-stream-avatar-img">
+                                        </div>
+                                        <div class="browse--mostLive-stream-name">
+                                            <div class="browse--mostLive-stream-icon">
+                                                <i class="fa-solid fa-check browse--mostLive-stream-icon-check"></i>
+                                                KenganC
+                                            </div>
+                                            <h4 class="browse--mostLive-stream-h4">
+                                                Trò chuyện với my Fans. Follow me!
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3 t-6 col-12">
+                                <div class="browse--mostLive-stream-item">
+                                    <div class="browse--mostLive-stream-thumb">
+                                        <img src="img/stream-02.jpg" alt="" class="browse--mostLive-stream-img">
+                                        <div class="browse--mostLive-stream-thumb-hover">
+                                            <div class="browse--mostLive-stream-thumb-live">
+                                                <a href="" class="browse--mostLive-stream-thumb-link">Live</a>
+                                            </div>
+                                            <ul class="browse--mostLive-stream-thumb-list">
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-eye browse--mostLive-stream-thumb-icon"></i>
+                                                        1K
+                                                    </a>
+                                                </li>
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-gamepad browse--mostLive-stream-thumb-icon"></i>
+                                                        Pắp ri
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="browse--mostLive-stream-content">
+                                        <div class="browse--mostLive-stream-avatar">
+                                            <img src="img/avatar-02.jpg" alt="" class="browse--mostLive-stream-avatar-img">
+                                        </div>
+                                        <div class="browse--mostLive-stream-name">
+                                            <div class="browse--mostLive-stream-icon">
+                                                <i class="fa-solid fa-check browse--mostLive-stream-icon-check"></i>
+                                                LunaMa
+                                            </div>
+                                            <h4 class="browse--mostLive-stream-h4">
+                                                LiveStream PugG 36 tiếng liên tục? 
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3 t-6 col-12">
+                                <div class="browse--mostLive-stream-item">
+                                    <div class="browse--mostLive-stream-thumb">
+                                        <img src="img/stream-03.jpg" alt="" class="browse--mostLive-stream-img">
+                                        <div class="browse--mostLive-stream-thumb-hover">
+                                            <div class="browse--mostLive-stream-thumb-live">
+                                                <a href="" class="browse--mostLive-stream-thumb-link">Live</a>
+                                            </div>
+                                            <ul class="browse--mostLive-stream-thumb-list">
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-eye browse--mostLive-stream-thumb-icon"></i>
+                                                        2.2K
+                                                    </a>
+                                                </li>
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-gamepad browse--mostLive-stream-thumb-icon"></i>
+                                                        Lờ o Lờ
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="browse--mostLive-stream-content">
+                                        <div class="browse--mostLive-stream-avatar">
+                                            <img src="img/avatar-03.jpg" alt="" class="browse--mostLive-stream-avatar-img">
+                                        </div>
+                                        <div class="browse--mostLive-stream-name">
+                                            <div class="browse--mostLive-stream-icon">
+                                                <i class="fa-solid fa-check browse--mostLive-stream-icon-check"></i>
+                                                Areluwa
+                                            </div>
+                                            <h4 class="browse--mostLive-stream-h4">
+                                                LiveStream LOL 36 tiếng liên tục? 
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3 t-6 col-12">
+                                <div class="browse--mostLive-stream-item">
+                                    <div class="browse--mostLive-stream-thumb">
+                                        <img src="img/stream-04.jpg" alt="" class="browse--mostLive-stream-img">
+                                        <div class="browse--mostLive-stream-thumb-hover">
+                                            <div class="browse--mostLive-stream-thumb-live">
+                                                <a href="" class="browse--mostLive-stream-thumb-link">Live</a>
+                                            </div>
+                                            <ul class="browse--mostLive-stream-thumb-list">
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-eye browse--mostLive-stream-thumb-icon"></i>
+                                                        2K
+                                                    </a>
+                                                </li>
+                                                <li class="browse--mostLive-stream-thumb-item">
+                                                    <a href="" class="browse--mostLive-stream-thumb-itemLink">
+                                                        <i class="fa-solid fa-gamepad browse--mostLive-stream-thumb-icon"></i>
+                                                        Phi Phai
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="browse--mostLive-stream-content">
+                                        <div class="browse--mostLive-stream-avatar">
+                                            <img src="img/avatar-04.jpg" alt="" class="browse--mostLive-stream-avatar-img">
+                                        </div>
+                                        <div class="browse--mostLive-stream-name">
+                                            <div class="browse--mostLive-stream-icon">
+                                                <i class="fa-solid fa-check browse--mostLive-stream-icon-check"></i>
+                                                GangTm
+                                            </div>
+                                            <h4 class="browse--mostLive-stream-h4">
+                                                Cùng xem GangTm chơi. Good morning
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-12 t-12 m-12">
+                            <div class="browse--container__btn-stream">
+                                <a href="" class="container__btn-link">
+                                    Xem tất cả
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <footer class="footer">
+            <div class="col-12">
+                <p class="footer__container">
+                    Copyright © 2036
+                    <a href="" class="footer__container-link">
+                        Cyborg Gaming
+                    </a>
+                    Company. All rights reserved.
+                    <br>
+                    Design: 
+                    <a href="" class="footer__container-link">
+                        Luc Lee
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- loader -->
+
+    <div class="overlay"></div>
+    <div class="loader-web">
+        <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
+        </div>
+    </div>
+
+    <!-- end load -->
+    <!-- link javascript -->
+    <script src="js/browse.js"></script>
+    <script src="js/stream.js"></script>   
+
+</body>
+</html>

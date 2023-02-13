@@ -1,0 +1,341 @@
+/* mobile & tablet */
+
+@media (max-width: 1023px)  {
+    .hide-on-mobile-tablet {
+        display: none !important;
+    }
+
+    /* responsive stream */
+    .header.col-12 {
+        height: 80px;
+        background-color: #f7f7f7;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        padding: 0 27px;
+    }
+
+    .header__logo {
+        border-right: none !important;
+    }
+
+    .header__search .header__search-input {
+        background-color: var(--white-color);
+        box-shadow: 0px 0 30px rgb(1 41 112 / 10%);;
+    }
+
+    .header__search .header__search-icon {
+        color: var(--light-pink);
+    }
+
+    /* thanh lựa chọn */
+    .header__search-mobile-tablet {
+        display: block !important;
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    /*  */
+
+    .col-12 .container {
+        margin-top: calc(40px + var(--header-height));
+    }
+
+    .header__bars-list {
+        display: block !important;
+    }
+
+    .container__popular-text,
+    .container__library-text {
+        font-size: 27px !important;
+    }
+
+    .container__library-list {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .container__library-item:nth-child(3),
+    .container__library-item:nth-child(4),
+    .container__library-item:nth-child(5),
+    .container__library-item:last-child {
+        margin-top: 15px;
+    }
+
+    .container__library-list .container__library-item:last-child {
+        text-align: start;
+    }
+
+    .container__library-btn {
+        text-align: left !important;
+    }
+
+    .container__library-btn .container__library-link {
+        width: 50%;
+    }
+
+    .container__library-item .container__library-name {
+        font-size: 20px;
+    }
+
+    .container__library-item .container__library-span {
+        font-size: 16px;
+    } 
+
+
+    /* icon search */
+
+    .header.col-12 .header__search-tablet-mobile-icon {
+       visibility: unset;
+    }
+    /* end stream */
+
+    /* stream browse */
+
+    .featured__section-carousel .featured__section-carousel-item {
+        min-width: calc(500px / 2);
+    }
+
+    .featured__section-icon:nth-child(2) {
+        margin-right: 10px;
+    }
+
+    .browse--featured-games {
+        margin-bottom: 60px;
+    }
+
+    .browse--liveStream-item-child {
+        margin: 15px 0;
+    }
+    /* end browse */
+    
+
+    /* start details */
+
+    .details--container-fortniteVideo {
+        margin-top: 30px;
+    }
+
+    /* end details */
+
+
+    /* start profile */
+    .profile--container__profile-text {
+        margin: 45px 0;
+    }
+
+    /* end profile */
+
+}
+
+/* tablet */
+
+@media (min-width:740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none !important;
+    }
+    .wide {
+        width: 100%;
+    }
+
+}
+
+/* mobile */
+
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    .header__search-search {
+        display: none;
+    }
+
+    .header__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__logo-img {
+        width: 150px;
+    }
+
+    .header.col-12 .header__search-mobile-icon-div {
+        display: block;
+    }
+
+    .col-12 .container {
+        padding: 30px;
+    }
+
+    .header__container-banner {
+        text-align: center;
+    }
+
+    .header__container-banner .header__container-text {
+        font-size: 20px;
+    }
+
+    .header__container-btn .header__container-btn-link {
+        padding: 10px;
+    }
+
+    .container__popular .container__popular-mobile {
+        padding: 0;
+    }
+
+    .col-12 .container__popular-list {
+        padding: 30px 12px;
+    }
+
+    .container .container__library {
+        padding: 30px 15px;
+    }
+
+    .container__popular-text,
+    .container__library-text {
+        font-size: 20px !important;
+    }
+
+    .container__library-item:nth-child(2),
+    .container__library-item:nth-child(3),
+    .container__library-item:nth-child(4),
+    .container__library-item:nth-child(5),
+    .container__library-item:last-child {
+        margin-top: 10px;
+    }
+
+    .container__library-item .container__library-item,
+    .container__library-item .container__library-name {
+        font-size: 16px;
+    }
+
+    .container__library-item .container__library-item, 
+    .container__library-item .container__library-span {
+        font-size: 13px;
+    }
+
+    .container__library-btn .container__library-link {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .container__library-list {
+        text-align: center;
+    }
+
+    .container .container__popular {
+        padding: 20px;
+    }
+
+    .m-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+/* stream browse */
+
+    .featured__section .featured__section-name {
+        font-size: 18px;
+    }
+
+    .featured__section .featured__section-game {
+        font-size: 19px;
+    }
+
+    .featured__section-carousel .featured__section-carousel-item {
+        min-width: 100%;
+    }
+
+    .browse--download-span {
+        display: inline-block;
+    }
+
+    .browse--download-list .browse--download-download {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .browse--download-link .browse--download-icon-download {
+        line-height: 1 !important;
+    }
+
+    .browse--liveStream-title .browse--liveStream-title-h4 {
+        font-size: 20px;
+    }
+
+    .browse--liveStream-title-h4 .browse--liveStream-title-em {
+        font-size: 22px;
+    }
+
+    .browse--mostLive-stream-content {
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .browse--mostLive-stream-h4 {
+        font-size: 13px;
+    }
+
+    .browse--mostLive-stream-icon {
+        font-size: 12px;
+    }
+
+    .browse--mostLive-stream-item {
+        border-bottom: 1px solid #444;;
+    }
+/* end browse */
+
+/* start details */
+
+    .details--fortnite__content .row-web .col-12 {
+        padding: 0;
+    }
+
+    .details--fortnite__content-item:nth-child(4) {
+        display: none;
+    }
+
+    .details--container__other-game-other .col-12 {
+        padding: 0 0 30px 0;
+    }
+
+    .col-12 .details--other-game__section-h4 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+/* end details */
+
+/* start stream */
+    .stream--container__top-streams-btn {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .stream--container__top-streams-btn .stream--container__top-streams-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+/* end stream */
+
+
+/* not col-12 */
+    .not-col-12-mobile {
+        padding: 0 !important;
+    }
+}
+
+
+/*  */
+
+@media (max-width: 1200px) {
+    .header__nav-list .header__nav-item {
+        padding: 0;
+    }
+}
